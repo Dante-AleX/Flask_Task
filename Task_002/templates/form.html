@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+        
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+    
+
+{% block content %}
+<meta charset="utf-8">
+<form action="/login/" method="post">
+    <input type="text" name="name" placeholder="Имя">
+    <input type="text" name="email" placeholder="Электронная почта">
+    <input type="submit" value="Отправить">
+</form>
+</body> 
+</html>
+{% endblock %}

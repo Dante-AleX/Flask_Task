@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Интернет-магазин "Мир Мебели"</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <header>
+        {% block title %} Интернет-магазин "Мир Мебели" {% endblock %}
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/category/кухня">Кухня</a></li>
+            <li><a href="/category/гостиная">Гостиная</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        Добро пожаловать в наш интернет-магазин "Мир Мебели"! <br>
+        У нас вы найдете все, что нужно для создания уютного и стильного интерьера.
+        <br>Широкий ассортимент мебели, от классики до современности - все это вы сможете найти у нас!
+
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2023 Интернет-магазин. Все права защищены.</p>
+    </footer>
+</body>
+</html>
